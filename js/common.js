@@ -1,10 +1,59 @@
 $(document).ready(function () {
     //common teaser head
 	headHtml();
+
+	//teaser flt banner
+	$('.flt button').click(function () {
+		$(this).parent().hide();
+	});
+
+	//like btn
+	$('.btn_like').click(function () {
+		$(this).toggleClass('on');
+	})
+
+	//poster flt banner
+	$('.flt_box .close_flt').click(function () {
+		$(this).parent().hide();
+	});
+
 	//common nav ui
 	navHtml();
 	navSns();
 	navDepth();
+
+	//main ui
+	if ($('.main').length) {
+		//notice
+		noticeRoll('notices', 'btnCount', true);
+		//poster
+		$('.roll_poster').slick({
+			dots: true,
+			infinite: true,
+			speed: 1500,
+			fade: true,
+			autoplay: true,
+			autoplaySpeed: 4000,
+			arrows: false
+		});
+		//news slide
+		$('.slide_news').slick({
+			infinite: true,
+			slidesToShow: 4,
+			slidesToScroll: 4,
+			arrows: true,
+			speed: 500
+		});
+		//bbs slide
+		$('.slide_bbs').slick({
+			infinite: true,
+			slidesToShow: 5,
+			slidesToScroll: 5,
+			arrows: true,
+			speed: 500
+		});
+	}
+    
 });
 
 function headHtml() {
