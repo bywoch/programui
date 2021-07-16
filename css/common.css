@@ -1,13 +1,10 @@
 @charset "euc-kr";
 
 #header {width: 100%; height: 110px; position: absolute; z-index: 50; background-size: 100% 120%;}
-
 #wrap {position: relative;}
 .ellipsis3 {text-overflow: ellipsis; overflow: hidden; display: -webkit-box !important; -webkit-line-clamp: 3; -webkit-box-orient: vertical; word-wrap: break-word;}
 .wrap_program {letter-spacing: -.06em; font-family: 'notokr-regular'; background: #fff;}
 .wrap_program a {color: inherit;}
-
-/*.wrap_program a:hover {text-decoration: underline}*/
 .wrap_program .box {width: 1218px; margin: 0 auto; position: relative; overflow: hidden; border-bottom: 1px solid #e5e5e5;}
 .wrap_program .box h3 {padding: 38px 0 26px; font-size: 28px; letter-spacing: -.08em; font-family: 'mbcnew-bold';}
 .wrap_program .img {position: relative; display: inline-block;}
