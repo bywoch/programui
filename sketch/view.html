@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="euc-kr">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>영상스케치 | iMBC</title>
+    <link href="http://www.imbc.com/commons/2018/css/sub-common.css" rel="stylesheet" type="text/css">
+    <link href="http://www.imbc.com/commons/2018/css/slick.css" rel="stylesheet" type="text/css">
+    <link href="../css/common.css" rel="stylesheet" type="text/css">
+    <link href="../css/sub.css" rel="stylesheet" type="text/css">
+    <script src="http://www.imbc.com/commons/libs/jquery-1.12.3.min.js"></script>
+    <script src="http://www.imbc.com/commons/2018/js/common.js"></script>
+    <script src="http://www.imbc.com/commons/2018/js/slick.min.js"></script>
+    <script src="http://www.imbc.com/common/js/global_function.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/vod.ui.js"></script>
+    <!--[if lt IE 9]><script src="http://www.imbc.com/commons/libs/html5shiv.min.js" type="text/javascript"></script><![endif]-->
+</head>
+<body>
+    <div id="accessibility">
+        <a href="#container">본문 바로가기</a>
+        <a href="#proNav">프로그램 메뉴 바로가기</a>
+    </div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 헤더, 네비 -->
+            <div class="nav wrapper">
+                <!-- 네비게이션 -->
+            </div>
+        </div>
+        <div id="container">
+            <div class="wrap_program">
+                <!-- 티저 심플형 -->
+                <section class="sc_type1">
+                    <!-- head html -->
+                </section>
+                <section class="sc_nav" id="proNav">
+                    <h3 class="blind">프로그램 메뉴</h3>   
+                    <!-- navigation include  -->
+                </section>
+                <section class="sub_cont">
+                    <h3>영상 스케치</h3>
+                    <div class="wrap_clip_area">
+                    <!--클립 좌측 시작 -->
+                      <div class="wrap_player">
+                          <!-- 906 509 플레이어 삽입-->
+                          <div class="player_area">
+                              <img src="../images/vod.jpg" width="906" alt="플레이어 예시">
+                          </div>
+                          <div class="vod_info">
+                              <!-- 190405 키보드 콘트롤 안내 시작-->
+                              <div class="keyboard_ctrl">
+                                  <button class="info-tit">키보드 콘트롤 안내</button>
+                                  <div class="popup">
+                                      <p>플레이어 키보드 단축키를 통해 재생 중인 영상을 <br>키보드로 편리하게 이용할 수 있습니다.</p>
+                                      <table>
+                                          <caption>플레이어 키보드 기능</caption>
+                                          <colgroup>
+                                              <col width="45px">
+                                              <col width="*">
+                                          </colgroup>
+                                          <tbody>
+                                              <tr>
+                                                  <th>K</th>
+                                                  <td>일시정지, 재생 전환</td>
+                                              </tr>
+                                              <tr>
+                                                  <th>J</th>
+                                                  <td>10초 이전으로 이동</td>
+                                              </tr>
+                                              <tr>
+                                                  <th>L</th>
+                                                  <td>10초 앞으로 이동</td>
+                                              </tr>
+                                              <tr>
+                                                  <th>I</th>
+                                                  <td>볼륨 올리기</td>
+                                              </tr>
+                                              <tr>
+                                                  <th>M</th>
+                                                  <td>볼륨 내리기</td>
+                                              </tr>
+                                          </tbody>
+                                      </table>
+                                      <button class="close_popup" type="button">닫기</button>
+                                  </div>
+                              </div>
+                              <!-- 190405 키보드 콘트롤 안내 끝-->
+                              <div class="wrap_title">
+                                  <div class="vod-sub">   
+                                      <span class="count">9</span>
+                                      <span class="date">2018. 08. 10</span>
+                                  </div>
+                                  <h1 class="vod-title"><span class="tit ellipsis-multi">[선공개] 올여름 기대주 유재석X이효리X비!!! <br>예상치 못한 의견 대립?!</span>
+                                  </h1>
+                                  <div class="vod_sns">
+                                    <button type="button" class="btn_share">공유하기</button>
+                                    <div class="layer_sns">
+                                      <div class="sns_wrap">
+                                        <a href="#" title="페이스북 공유"><img src="../images/ico-fb.png" alt="페이스북 공유"></a>
+                                        <a href="#" title="트위터 공유"><img src="../images/ico-twt.png" alt="트위터"></a>
+                                        <button type="button" class="btn_copy">URL복사</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                              </div>
+                          </div>                        
+                      </div>
+                      <!-- 클립 좌측 끝-->
+                      <!-- 클립 리스트 시작 -->
+                      <div class="clip_list">
+                        <div class="index"><span>9</span>&nbsp;/&nbsp;&nbsp;9</div>
+                        <button class="autoplay" id="autoplay">연속재생</button> <!-- 연속재생 끌때 off 추가 -->
+                        <ul>
+                          <li>
+                            <a href="#">
+                                <span class="img">
+                                  <img src="../images/vod1.jpg" alt="">
+                                  <span class="playtime">32:50</span>
+                                </span>
+                                <div class="text-box">
+                                    <span class="description">장혁, 정만식에 계약 제의받다 (5억)</span>
+                                    <span class="count">222</span>
+                                </div>
+                            </a>
+                          </li>
+                          <li class="playing">
+                            <a href="#">
+                                <span class="img">
+                                  <img src="../images/vod2.jpg" alt="">
+                                  <span class="playtime">32:50</span>
+                                </span>
+                                <div class="text-box">
+                                    <span class="description">장혁 잡는 고물 자동차 (마음대로 탈 순 있지만 내릴 순 없지!)</span>
+                                    <span class="count">3</span>
+                                </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                                <span class="img">
+                                  <img src="../images/vod3.jpg" alt="">
+                                  <span class="playtime">11:11:50</span>
+                                </span>
+                                <div class="text-box">
+                                    <span class="description">프로 복서가 된 장혁! 연습을 거듭하며 준비한 경기 장면 비하인드</span>
+                                    <span class="count">3</span>
+                                </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <span class="img">
+                                <img src="../images/vod1.jpg" alt="">
+                                <span class="playtime">11:11:50</span>
+                              </span>
+                              <div class="text-box">
+                                  <span class="description">프로 복서가 된 장혁! 연습을 거듭하며 준비한 경기 장면 비하인드</span>
+                                  <span class="count">3</span>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                                <span class="img">
+                                  <img src="../images/vod3.jpg" alt="">
+                                  <span class="playtime">11:11:50</span>
+                                </span>
+                                <div class="text-box">
+                                    <span class="description">프로 복서가 된 장혁! 연습을 거듭하며 준비한 경기 장면 비하인드</span>
+                                    <span class="count">3</span>
+                                </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <span class="img">
+                                <img src="../images/vod1.jpg" alt="">
+                                <span class="playtime">11:11:50</span>
+                              </span>
+                              <div class="text-box">
+                                  <span class="description">프로 복서가 된 장혁! 연습을 거듭하며 준비한 경기 장면 비하인드</span>
+                                  <span class="count">3</span>
+                              </div>
+                            </a>
+                          </li>
+
+                          <li>
+                            <a href="#">
+                              <span class="img">
+                                <img src="../images/vod3.jpg" alt="">
+                                <span class="playtime">11:11:50</span>
+                              </span>
+                              <div class="text-box">
+                                  <span class="description">프로 복서가 된 장혁! 연습을 거듭하며 준비한 경기 장면 비하인드</span>
+                                  <span class="count">3</span>
+                              </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                                <span class="img">
+                                  <img src="../images/vod2.jpg" alt="">
+                                  <span class="playtime">11:11:50</span>
+                                </span>
+                                <div class="text-box">
+                                    <span class="description">프로 복서가 된 장혁! 연습을 거듭하며 준비한 경기 장면 비하인드</span>
+                                    <span class="count">3</span>
+                                </div>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                                <span class="img">
+                                  <img src="../images/vod3.jpg" alt="">
+                                  <span class="playtime">11:11:50</span>
+                                </span>
+                                <div class="text-box">
+                                    <span class="description">프로 복서가 된 장혁! 연습을 거듭하며 준비한 경기 장면 비하인드</span>
+                                    <span class="count">3</span>
+                                </div>
+                            </a>
+                          </li>
+                      </ul>       
+                    </div>
+                    <!-- 클립 리스트 끝 -->                  
+                </div>
+                <section class="box sc_ad">
+                  <h3 class="blind">광고</h3>
+                  <div class="wrap_ad">                        
+                      <a href="#"><img src="../images/ad728.jpg" alt=""></a>
+                  </div>
+                </section>
+                <div class="sc_thumb">
+                  <div class="thumb_list">
+                    <ul>
+                        <li class="thumb">
+                            <a href="#">
+                                <span class="img vod"><img src="../images/vod1.jpg" alt=""></span>
+                                <span class="time">12:00</span>
+                                <div class="wrap_txt">
+                                    <p class="txt ellipsis-multi">비 맞으면서 눈물연기까지...</p>
+                                    <span class="date">2020. 05. 20</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="thumb">
+                            <a href="#">
+                                <span class="img vod"><img src="../images/news3.jpg" alt=""></span>
+                                <span class="time">01:30:00</span>
+                                <div class="wrap_txt">
+                                    <p class="txt ellipsis-multi">비 맞으면서 눈물연기까지... PRO 서연 & 민혁의 비 맞는 씬서 눈물연기까지... PRO 서연 & 민혁의 비 맞는 </p>
+                                    <span class="date">2020. 05. 20</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="thumb">
+                            <a href="#"> 
+                                <span class="img vod"><img src="../images/vod1.jpg" alt=""></span>
+                                <span class="time">12:00</span>
+                                <div class="wrap_txt">
+                                    <p class="txt ellipsis-multi">비 맞으면서 눈물연기까지... PRO 서연 & 민혁의 비 맞는 씬서 눈물연기까지... PRO 서연 & 민혁의 비 맞는 </p>
+                                    <span class="date">2020. 05. 20</span>
+                                </div>
+                            </a>
+                        </li>                        
+                        <li class="thumb">
+                            <a href="#">
+                                <span class="img vod"><img src="../images/news2.jpg" alt=""></span>
+                                <span class="time">12:00</span>
+                                <div class="wrap_txt">
+                                    <p class="txt ellipsis-multi">비 맞으면서 눈물연기까지... PRO 서연 & 민혁의 비 맞는 씬서 눈물연기까지... PRO 서연 & 민혁의 비 맞는 </p>
+                                    <span class="date">2020. 05. 20</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="thumb">
+                            <a href="#">
+                                <span class="img vod"><img src="../images/news3.jpg" alt=""></span>
+                                <span class="time">12:00</span>
+                                <div class="wrap_txt">
+                                    <p class="txt ellipsis-multi">비 맞으면서 눈물연기까지... PRO 서연 & 민혁의 비 맞는 씬서 눈물연기까지... PRO 서연 & 민혁의 비 맞는 </p>
+                                    <span class="date">2020. 05. 20</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="thumb">
+                            <a href="#">
+                                <span class="img vod"><img src="../images/vod1.jpg" alt=""></span>
+                                <span class="time">12:00</span>
+                                <div class="wrap_txt">
+                                    <p class="txt ellipsis-multi">비 맞으면서 눈물연기까지... PRO 서연 & 민혁의 비 맞는 씬서 눈물연기까지... PRO 서연 & 민혁의 비 맞는 </p>
+                                    <span class="date">2020. 05. 20</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="thumb">
+                            <a href="#">
+                                <span class="img vod"><img src="../images/news3.jpg" alt=""></span>
+                                <span class="time">12:00</span>
+                                <div class="wrap_txt">
+                                    <p class="txt ellipsis-multi">비 맞으면서 눈물연기까지... PRO 서연 & 민혁의 비 맞는 씬서 눈물연기까지... PRO 서연 & 민혁의 비 맞는 </p>
+                                    <span class="date">2020. 05. 20</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="thumb">
+                            <a href="#">
+                                <span class="img vod"><img src="../images/vod1.jpg" alt=""></span>
+                                <span class="time">12:00</span>
+                                <div class="wrap_txt">
+                                    <p class="txt ellipsis-multi">비 맞으면서 눈물연기까지... PRO 서연 & 민혁의 비 맞는 씬서 눈물연기까지... PRO 서연 & 민혁의 비 맞는 </p>
+                                    <span class="date">2020. 05. 20</span>
+                                </div>
+                            </a>
+                        </li>
+                      </ul>
+                      <button type="button">MORE<span class="ico_more"></span></button>
+                    </div>
+                </div>
+                <!-- 다시보기 시작  -->
+                <div class="sc_thumb">
+                  <h3>다시보기</h3>
+                  <div class="sort">            
+                    <ul>
+                      <li class="check">
+                        <div class="wrap-check"><input type="radio" id="sort1" name="sort" checked=""><label for="sort1"></label><label for="sort1">최신순</label></div>
+                      </li>
+                      <li class="check">
+                        <div class="wrap-check"><input type="radio" id="sort2" name="sort"><label for="sort2"></label><label for="sort2">첫회부터</label></div>
+                      </li>
+                      <li class="check year">
+                        <div class="wrap-check"><input type="radio" id="sort3" name="sort"><label for="sort3"></label><label for="sort3">연도순</label></div>
+                        <div class="select-box" tabindex="0"> 
+                            <p>선택</p>
+                            <ul class="dropdown">
+                              <li>2018</li>
+                              <li>2017</li>
+                              <li>2016</li>
+                              <li>2015</li>
+                            </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="thumb_list">
+                    <ul>
+                        <li class="thumb">
+                            <a href="#">
+                                <span class="img vod"><img src="../images/vod1.jpg" alt=""></span>
+                                <span class="time">12:00</span>
+                                <div class="wrap_txt">
+                                    <span class="num">21-22회</span>
+                                    <p class="txt ellipsis-multi">비 맞으면서 눈물연기까지... PRO 서연 & 민혁의 비 맞는 씬서 눈물연기까지... PRO 서연 & 민혁의 비 맞는 </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="thumb">
+                            <a href="#">
+                                <span class="img vod"><img src="../images/news3.jpg" alt=""></span>
+                                <span class="time">01:30:00</span>
+                                <div class="wrap_txt">
+                                    <span class="num">21-22회</span>
+                                    <p class="txt ellipsis-multi">비 맞으면서 눈물연기까지... PRO 서연 & 민혁의 비 맞는 씬서 눈물연기까지... PRO 서연 & 민혁의 비 맞는 </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="thumb">
+                            <a href="#"> 
+                                <span class="img vod"><img src="../images/vod1.jpg" alt=""></span>
+                                <span class="time">12:00</span>
+                                <div class="wrap_txt">
+                                    <span class="num">21-22회</span>
+                                    <p class="txt ellipsis-multi">비 맞으면서 눈물연기까지... PRO 서연 & 민혁의 비 맞는 씬서 눈물연기까지... PRO 서연 & 민혁의 비 맞는 </p>
+                                </div>
+                            </a>
+                        </li>                        
+                        <li class="thumb">
+                            <a href="#">
+                                <span class="img vod"><img src="../images/news2.jpg" alt=""></span>
+                                <span class="time">12:00</span>
+                                <div class="wrap_txt">
+                                    <span class="num">21-22회</span>
+                                    <p class="txt ellipsis-multi">비 맞으면서 눈물연기까지... PRO 서연 & 민혁의 비 맞는 씬서 눈물연기까지... PRO 서연 & 민혁의 비 맞는 </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="thumb">
+                            <a href="#">
+                                <span class="img vod"><img src="../images/news3.jpg" alt=""></span>
+                                <span class="time">12:00</span>
+                                <div class="wrap_txt">
+                                    <span class="num">21-22회</span>
+                                    <p class="txt ellipsis-multi">비 맞으면서 눈물연기까지... PRO 서연 & 민혁의 비 맞는 씬서 눈물연기까지... PRO 서연 & 민혁의 비 맞는 </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="thumb">
+                            <a href="#">
+                                <span class="img vod"><img src="../images/vod1.jpg" alt=""></span>
+                                <span class="time">12:00</span>
+                                <div class="wrap_txt">
+                                    <span class="num">21-22회</span>
+                                    <p class="txt ellipsis-multi">비 맞으면서 눈물연기까지... PRO 서연 & 민혁의 비 맞는 씬서 눈물연기까지... PRO 서연 & 민혁의 비 맞는 </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="thumb">
+                            <a href="#">
+                                <span class="img vod"><img src="../images/news3.jpg" alt=""></span>
+                                <span class="time">12:00</span>
+                                <div class="wrap_txt">
+                                    <span class="num">21-22회</span>
+                                    <p class="txt ellipsis-multi">비 맞으면서 눈물연기까지... PRO 서연 & 민혁의 비 맞는 씬서 눈물연기까지... PRO 서연 & 민혁의 비 맞는 </p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="thumb">
+                            <a href="#">
+                                <span class="img vod"><img src="../images/vod1.jpg" alt=""></span>
+                                <span class="time">12:00</span>
+                                <div class="wrap_txt">
+                                    <span class="num">21-22회</span>
+                                    <p class="txt ellipsis-multi">비 맞으면서 눈물연기까지... PRO 서연 & 민혁의 비 맞는 씬서 눈물연기까지... PRO 서연 & 민혁의 비 맞는 </p>
+                                </div>
+                            </a>
+                        </li>
+                      </ul>
+                      <button type="button">MORE<span class="ico_more"></span></button>
+                    </div>
+                  </div>
+                  <!-- 전체 회차 끝  -->
+                </section>                
+            </div>
+        </div>
+        <footer>
+            <p>본 콘텐츠의 저작권은 MBC에 있습니다. <br>Copyright(c) Since 1996, MBC&iMBC All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
+
