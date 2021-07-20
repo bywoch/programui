@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="euc-kr">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>다시보기 | iMBC</title>
+    <link href="http://www.imbc.com/commons/2018/css/sub-common.css" rel="stylesheet" type="text/css">
+    <link href="http://www.imbc.com/commons/2018/css/slick.css" rel="stylesheet" type="text/css">
+    <link href="../css/common.css" rel="stylesheet" type="text/css">
+    <link href="../css/sub.css" rel="stylesheet" type="text/css">
+    <script src="http://www.imbc.com/commons/libs/jquery-1.12.3.min.js"></script>
+    <script src="http://www.imbc.com/commons/2018/js/common.js"></script>
+    <script src="http://www.imbc.com/commons/2018/js/slick.min.js"></script>
+    <script src="http://www.imbc.com/common/js/global_function.js"></script>
+    <script src="../js/common.js"></script>
+    <!--[if lt IE 9]><script src="http://www.imbc.com/commons/libs/html5shiv.min.js" type="text/javascript"></script><![endif]-->
+</head>
+<body>
+    <div id="accessibility">
+        <a href="#container">본문 바로가기</a>
+        <a href="#proNav">프로그램 메뉴 바로가기</a>
+    </div>
+    <div id="wrap">
+        <div id="header">
+            <!-- 헤더, 네비 -->
+            <div class="nav wrapper">
+                <!-- 네비게이션 -->
+            </div>
+        </div>
+        <div id="container">
+            <div class="wrap_program">
+                <section class="sc_type1">
+                    <!-- head html -->
+                </section>
+                <section class="sc_nav" id="proNav">
+                    <h3 class="blind">프로그램 메뉴</h3>   
+                    <!-- navigation include  -->
+                </section>
+                <section class="sub_cont">
+                    <h3>다시보기</h3>
+                    <div class="wrap_vod">
+                        <div class="noti">
+                            <span class="tit">공지사항</span>
+                            <div class="cont">
+                                <ul>
+                                    <li class="ellipsis">해당 프로그램은 시청자 공익 차원에서 로그인 없이 무료로 시청 가능합니다.</li>
+                                    <li class="ellipsis">해당 프로그램은 시청자 공익 차원에서 로그인 없이 무료로 시청 가능합니다.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="icons">
+                            <ul>
+                                <li><span class="icon price"></span><a href="http://www.imbc.com/help/vodnotice/index.html" target="_blank" title="새창열림">요금안내</a></li>
+                                <li><span class="icon question"></span><a href="http://help.imbc.com/" target="_blank" title="새창열림">이용안내</a></li>
+                                <li><span class="icon subtitle"></span>자막방송</li>
+                                <li><span class="icon read"></span>화면해설방송</li>
+                            </ul>                            
+                        </div>
+                        <div class="vod_set">
+                            <div class="sort">
+                                <ul>
+                                    <li>
+                                        <input type="radio" name="sort" id="desc" checked>
+                                        <label for="desc">최신순</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="sort" id="asc">
+                                        <label for="asc">1회부터</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="wrap_right">
+                                <div class="select-wrap">
+                                    <select id="endYear" name="endYear" title="년도">
+                                        <option value="-1">년도</option>
+                                        <option value="0">전체</option><option value="2020">2020년</option>
+                                        <option value="2019">2019년</option>
+                                        <option value="2018">2018년</option>
+                                        <option value="2017">2017년</option>
+                                        <option value="2016">2016년</option>
+                                        <option value="2015">2015년</option>
+                                        <option value="2014">2014년</option>
+                                        <option value="2013">2013년</option>
+                                        <option value="2012">2012년</option>
+                                        <option value="2011">2011년</option>
+                                    </select>
+                                    <select id="initial" name="initial" title="방송일&회차" style="width: 170px">
+                                        <option value="-1">방송일&회차</option>
+                                        <option value="">전체</option>
+                                        <option value="23회">23회</option>
+                                        <option value="23회">23회</option>
+                                        <option value="23회">23회</option>
+                                        <option value="23회">23회</option>
+                                        <option value="23회">23회</option>
+                                        <option value="23회">23회</option>
+                                        <option value="23회">23회</option>
+                                        <option value="23회">23회</option>
+                                    </select>
+                                </div>
+                                <div class="type_ch">
+                                    <button type="button" class="type_list on">리스트형</button>
+                                    <button type="button" class="type_thumb">썸네일형</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 다시보기 리스트형 start  -->
+                        <div class="vod_list">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="wrap_img">
+                                            <span class="img vod ico-19"><img src="../images/vod2.jpg" alt=""></span>
+                                            <span class="time">12:00</span>
+                                        </div>
+                                        <div class="wrap_txt">
+                                            <div class="vod_icons">
+                                                <span class="icon subtitle">자막방송</span>
+                                                <span class="icon read">화면해설방송</span>
+                                            </div>
+                                            <span class="num">21-22회</span><span class="date">2020. 05. 20</span>
+                                            <h4 class="ellipsis"><span>티저02회 아무튼 출근 티저 예고2</span></h4>
+                                            <p class="cast">
+                                                <span class="tit">출연진</span>
+                                                <span class="ppl ellipsis">레드벨벳-아이린&슬기 . SF9 . 청하 . 솔지 . 유승우 . 블랙핑크 . 선미 . Stray Kids . 이진혁 . WOODZ(조승연) . 김수찬 . 보이스퍼</span>
+                                            </p>
+                                            <p class="txt ellipsis3">자고나면 뒤바뀌는 일터의 세계! 내 밥벌이는 괜찮은걸까...?
+아니, 다들 어떤 밥벌이로 먹고 살아???
+
+그 해답을 찾기 위한 본격 남의 일터 엿보기
+국내 최초 직장인 브이로그 예능이 온다!
+오늘도 출근길에 나선 ‘프로 밥벌러’들의 등장!
+공감 백배 밥벌이부터 新밥벌이의 세계까지!
+그동안 어디서도 볼 수 없었던 찐 직장 생활이 낱낱이 공개된다!
+
+직장에서 느끼는 단맛 짠맛, 그리고 드러운(?)맛까지!
+밥벌러들의 웃픈 직장 생활기에 공감하고
+‘먹고사니즘’의 새로운 패러다임을 제시할!
+세상 궁금한 남의 일터 엿보기!
+</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="wrap_img">
+                                            <span class="img vod"><img src="../images/vod1.jpg" alt=""></span>
+                                            <span class="time">12:00</span>
+                                        </div>
+                                        <div class="wrap_txt">
+                                            <span class="num">21-22회</span><span class="date">2020. 05. 20</span>
+                                            <h4><span class="ellipsis">불편한 사이</span></h4>
+                                            <p class="cast">
+                                                <span class="tit">출연진</span>
+                                                <span class="ppl ellipsis">레드벨벳-아이린&슬기 . SF9 . 청하 . 솔지 . 유승우 . 블랙핑크 . 선미 . Stray Kids . 이진혁 . WOODZ(조승연) . 김수찬 . 보이스퍼</span>
+                                            </p>
+                                            <p class="txt ellipsis3">도희(서지혜)는 그간 해경(송승헌)에게 이별을 전하고 혼자만의 시간을 보낸다. 한편 재혁(이지훈)이 어딘가로 사라졌는데. 재혁(이지훈)이 어딘가로 사라졌는.</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="wrap_img">
+                                            <span class="img vod ico-19"><img src="../images/vod3.jpg" alt=""></span>
+                                            <span class="time">12:00</span>
+                                        </div>
+                                        <div class="wrap_txt">
+                                            <span class="num">21-22회</span><span class="date">2020. 05. 20</span>
+                                            <h4 class="ellipsis"><span>끊어낼 수 없는 관계?</span></h4>
+                                            <p class="cast">
+                                                <span class="tit">출연진</span>
+                                                <span class="ppl ellipsis">레드벨벳-아이린&슬기 . SF9 . 청하 . 솔지 . 유승우 . 블랙핑크 . 선미 . Stray Kids . 이진혁 . WOODZ(조승연) . 김수찬 . 보이스퍼</span>
+                                            </p>
+                                            <p class="txt ellipsis3">비 맞으면서 눈물연기까지... PRO 서연 & 민혁의 비 맞는 씬서 눈물연기까지... PRO 서연 & 민혁의 비 맞는 </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="wrap_img">
+                                            <span class="img vod"><img src="../images/vod1.jpg" alt=""></span>
+                                            <span class="time">12:00</span>
+                                        </div>
+                                        <div class="wrap_txt">
+                                            <span class="num">21-22회</span><span class="date">2020. 05. 20</span>
+                                            <h4><span class="ellipsis">불편한 사이</span></h4>
+                                            <p class="cast">
+                                                <span class="tit">출연진</span>
+                                                <span class="ppl ellipsis">레드벨벳-아이린&슬기 . SF9 . 청하 . 솔지 . 유승우 . 블랙핑크 . 선미 . Stray Kids . 이진혁 . WOODZ(조승연) . 김수찬 . 보이스퍼</span>
+                                            </p>
+                                            <p class="txt ellipsis3">도희(서지혜)는 그간 해경(송승헌)에게 이별을 전하고 혼자만의 시간을 보낸다. 한편 재혁(이지훈)이 어딘가로 사라졌는데...도희(서지혜)는 그간 해경(송승헌)에게 이별을 전하고 혼자만의 시간을 보낸다. 한편 재혁(이지훈)이 어딘가로 사라졌는데 한편 재혁(이지훈)이 어딘가로 사라졌는데 한편 재혁(이지훈)이 어딘가로 사라졌는데 한편 재혁(이지훈)이 어딘가로 사라졌는데 한편 재혁(이지훈)이 어딘가로 사라졌는데</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <div class="ad">
+                                        <a href="#"><img src="../images/ad728.jpg" alt=""></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="wrap_img">
+                                            <span class="img vod ico-19"><img src="../images/vod2.jpg" alt=""></span>
+                                            <span class="time">12:00</span>
+                                        </div>
+                                        <div class="wrap_txt">
+                                            <span class="num">21-22회</span><span class="date">2020. 05. 20</span>
+                                            <h4 class="ellipsis"><span>끊어낼 수 없는 관계?</span></h4>
+                                            <p class="cast">
+                                                <span class="tit">출연진</span>
+                                                <span class="ppl ellipsis">레드벨벳-아이린&슬기 . SF9 . 청하 . 솔지 . 유승우 . 블랙핑크 . 선미 . Stray Kids . 이진혁 . WOODZ(조승연) . 김수찬 . 보이스퍼</span>
+                                            </p>
+                                            <p class="txt ellipsis3">비 맞으면서 눈물연기까지... PRO 서연 & 민혁의 비 맞는 씬서 눈물연기까지... PRO 서연 & 민혁의 비 맞는 </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="wrap_img">
+                                            <span class="img vod"><img src="../images/vod1.jpg" alt=""></span>
+                                            <span class="time">12:00</span>
+                                        </div>
+                                        <div class="wrap_txt">
+                                            <span class="num">21-22회</span><span class="date">2020. 05. 20</span>
+                                            <h4><span class="ellipsis">불편한 사이</span></h4>
+                                            <p class="cast">
+                                                <span class="tit">출연진</span>
+                                                <span class="ppl ellipsis">레드벨벳-아이린&슬기 . SF9 . 청하 . 솔지 . 유승우 . 블랙핑크 . 선미 . Stray Kids . 이진혁 . WOODZ(조승연) . 김수찬 . 보이스퍼</span>
+                                            </p>
+                                            <p class="txt ellipsis3">도희(서지혜)는 그간 해경(송승헌)에게 이별을 전하고 혼자만의 시간을 보낸다. 한편 재혁(이지훈)이 어딘가로 사라졌는데...도희(서지혜)는 그간 해경(송승헌)에게 이별을 전하고 혼자만의 시간을 보낸다. 한편 재혁(이지훈)이 어딘가로 사라졌는데 한편 재혁(이지훈)이 어딘가로 사라졌는데 한편 재혁(이지훈)이 어딘가로 사라졌는데 한편 재혁(이지훈)이 어딘가로 사라졌는데 한편 재혁(이지훈)이 어딘가로 사라졌는데</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="wrap_img">
+                                            <span class="img vod ico-19"><img src="../images/vod3.jpg" alt=""></span>
+                                            <span class="time">12:00</span>
+                                        </div>
+                                        <div class="wrap_txt">
+                                            <span class="num">21-22회</span><span class="date">2020. 05. 20</span>
+                                            <h4 class="ellipsis"><span>끊어낼 수 없는 관계?</span></h4>
+                                            <p class="cast">
+                                                <span class="tit">출연진</span>
+                                                <span class="ppl ellipsis">레드벨벳-아이린&슬기 . SF9 . 청하 . 솔지 . 유승우 . 블랙핑크 . 선미 . Stray Kids . 이진혁 . WOODZ(조승연) . 김수찬 . 보이스퍼</span>
+                                            </p>
+                                            <p class="txt ellipsis3">비 맞으면서 눈물연기까지... PRO 서연 & 민혁의 비 맞는 씬서 눈물연기까지... PRO 서연 & 민혁의 비 맞는 </p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="wrap_img">
+                                            <span class="img vod"><img src="../images/vod1.jpg" alt=""></span>
+                                            <span class="time">12:00</span>
+                                        </div>
+                                        <div class="wrap_txt">
+                                            <span class="num">21-22회</span><span class="date">2020. 05. 20</span>
+                                            <h4><span class="ellipsis">불편한 사이</span></h4>
+                                            <p class="cast">
+                                                <span class="tit">출연진</span>
+                                                <span class="ppl ellipsis">레드벨벳-아이린&슬기 . SF9 . 청하 . 솔지 . 유승우 . 블랙핑크 . 선미 . Stray Kids . 이진혁 . WOODZ(조승연) . 김수찬 . 보이스퍼</span>
+                                            </p>
+                                            <p class="txt ellipsis3">도희(서지혜)는 그간 해경(송승헌)에게 이별을 전하고 혼자만의 시간을 보낸다. 한편 재혁(이지훈)이 어딘가로 사라졌는데...도희(서지혜)는 그간 해경(송승헌)에게 이별을 전하고 혼자만의 시간을 보낸다. 한편 재혁(이지훈)이 어딘가로 사라졌는데 한편 재혁(이지훈)이 어딘가로 사라졌는데 한편 재혁(이지훈)이 어딘가로 사라졌는데 한편 재혁(이지훈)이 어딘가로 사라졌는데 한편 재혁(이지훈)이 어딘가로 사라졌는데</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="paging">
+                                <a href="#" class="first">가장 앞페이지로</a>
+                                <a href="#" class="prev">이전</a>
+                                <a href="#" class="active">1</a>
+                                <a href="#">2</a>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#">5</a>
+                                <a href="#" class="next">다음</a>
+                                <a href="#" class="last">가장 뒤페이지로</a>
+                            </div>
+                        </div>
+                        <!-- 다시보기 리스트형 end -->
+                    </div>
+                </section>
+            </div>
+        </div>
+        <footer>
+            <p>본 콘텐츠의 저작권은 MBC에 있습니다. <br>Copyright(c) Since 1996, MBC&iMBC All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
+
