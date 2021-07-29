@@ -195,3 +195,44 @@ body {background: none;}
 .clip_list ul li.playing .img:before {content: ''; position: absolute; width: 100%; height: 100%; background: rgba(48, 75, 196, .7) url(../images/video-icon.png) no-repeat center center;}
 .clip_list ul li.ico-19:after {content: ''; display: block; width: 22px; height: 22px; position: absolute; left: 131px; top: 8px; background: url(../images/ico-badge-19.png) repeat-x; background-size: 22px; box-sizing: border-box;}
 
+/*keyboard control*/
+.keyboard_ctrl {position: absolute; top: 20px; right: 0;}
+.keyboard_ctrl .info-tit {padding-left: 20px; font-size: 13px; color: #666666; font-family: 'notokr-medium'; text-decoration: underline; background: url(../images/ico-keyb.png) left center no-repeat;}
+.keyboard_ctrl .popup {display: none; padding: 18px 20px; width: 272px; position: absolute; top: -4px; right: 0; background: #fff; z-index: 50; border: 1px solid #ddd;}
+.keyboard_ctrl .popup p {font-size: 14px; font-family: 'notokr-medium'; line-height: 19px; color: #1a1a1a;}
+.keyboard_ctrl table {width: 236px; margin-top: 14px; border-top: 1px solid #d5d5d5; border-left: 1px solid #d5d5d5;}
+.keyboard_ctrl table caption {text-indent: -9999px; width: 1px; height: 1px;}
+.keyboard_ctrl table th,
+.keyboard_ctrl table td {border-right: 1px solid #d5d5d5; border-bottom: 1px solid #d5d5d5; line-height: 26px; font-size: 14px;}
+.keyboard_ctrl table th {font-family: 'noto-bold'; color: #1a1a1a;}
+.keyboard_ctrl table td {padding-left: 15px; color: #757575; font-family: 'notokr-demilight';}
+.keyboard_ctrl .popup .close_popup {position: absolute; top: 11px; right: 11px; width: 14px; height: 14px; text-indent: -9999px; background: url(http://img.imbc.com/commons/2018/image/player/keyinfo-close.png) no-repeat;}
+.sc_thumb {width: 1218px; margin: 0 auto; padding: 15px 0; position: relative;}
+.sc_thumb h3 {padding: 0 0 20px;}
+.sc_thumb button {margin: 0 auto; display: block; width: 180px; height: 48px; line-height: 48px; background: #efefef; color: #000; font-family: 'notokr-bold'; font-size: 12px;}
+.sc_thumb button .ico_more {display: inline-block; margin: 19px 0 0 10px; width: 12px; height: 9px; background: url(../images/ico_more.png) no-repeat;}
+.sc_thumb .thumb_list ul {margin-bottom: 15px;}
+.sc_thumb .thumb_list .wrap_txt {height: 96px; padding: 12px;}
+.sc_thumb .thumb_list .wrap_txt .title {margin-right: 7px;}
+.sc_thumb .thumb_list .wrap_txt span {display: inline-block; font-size: 14px; color: #333; line-height: 1.5;}
+.sc_thumb .thumb_list .txt {height: 50px; margin-bottom: 9px; font-size: 18px; line-height: 25px; max-height: 50px;}
+.sc_thumb .thumb_list .wrap_txt .num {color: #333; font-family: 'notokr-bold'; margin-bottom: 3px;}
+.sc_thumb .thumb_list .wrap_txt .date {color: #666666; font-size: 14px; display: inline-block; font-family: 'noto-regular';}
+.sc_thumb .thumb_list .pro {display: inline-block; margin-right: 7px;}
+.sc_thumb .sort {position: absolute; top: 30px; right: 0;}
+.sc_thumb .sort .check {float: left; margin-left: 16px; font-size: 14px; color: #666666; font-family: 'notokr-medium'; line-height: 18px;}
+.sc_thumb .sort input[type="radio"] {display: none;}
+.sc_thumb .sort input[type="radio"]+label {display: inline-block; width: 18px; height: 18px; background: url(../images/check-off.png) no-repeat; cursor: pointer; vertical-align: middle;}
+.sc_thumb .sort input[type="radio"]+label+label {margin-left: 5px; vertical-align: middle; cursor: pointer;}
+.sc_thumb .sort input[type="radio"]:checked+label {background: url(../images/check-on.png) no-repeat; background-size: 18px;}
+.sc_thumb .sort input[type="radio"]:checked+label+label {color: #333333;}
+.sc_thumb .sort .check.year .wrap-check {overflow: hidden; float: left;}
+.sc_thumb .sort .select-box {display: none; float: left; background: url(../images/select.png) no-repeat 62px center; margin-left: 8px; margin-top: -5px; width: 82px; box-sizing: border-box; font-size: 12px; line-height: 26px; padding: 0 15px 0 10px; position: relative; cursor: pointer; border: 1px solid #ddd;}
+.sc_thumb .sort .check.year.active .select-box {display: block;}
+.sc_thumb .sort .select-box p {color: #4664e6; font-family: 'notokr-bold'; line-height: 28px;}
+.sc_thumb .sort .select-box .dropdown {display: none; box-sizing: border-box; width: 81px; padding: 0 15px 0 10px; position: absolute; top: 28px; left: 0; z-index: 10; background: #fff; border: 1px solid #ddd;}
+.sc_thumb .sort .select-box li {color: #666666; font-family: 'notokr-demilight'; line-height: 28px;}
+
+/*19*/
+.thumb_list .ico-19:before,
+.vod_list .ico-19:before {content: ''; width: 26px; height: 26px; position: absolute; right: 8px; top: 8px; background: url(../images/ico-badge-19.png) repeat-x; box-sizing: border-box;}
