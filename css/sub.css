@@ -146,8 +146,7 @@ body {background: none;}
 .wrap_vod .vod_thumb .wrap_txt .vod_icons .icon {margin: 0 0 0 2px; float: left;}
 .wrap_vod .vod_list .ad {width: 728px; margin: 0 auto;}
 .paging {width: 1218px; margin: 24px auto 50px; text-align: center;}
-.paging a,
-.sub .paging span {display: inline-block; margin: 0 2px; width: 35px; height: 35px; line-height: 35px; text-align: center; font-size: 18px; color: #000; font-family: 'noto-regular';}
+.paging a, .sub .paging span {display: inline-block; margin: 0 2px; width: 35px; height: 35px; line-height: 35px; text-align: center; font-size: 18px; color: #000; font-family: 'noto-regular';}
 .paging .active {color: #4664e6; border: 1px solid #a9b6ee; border-radius: 2px; font-weight: 600;}
 .paging .first {text-indent: -9999px; background: url(../images/paging-first.png) center center no-repeat;}
 .paging .last {text-indent: -9999px; background: url(../images/paging-last.png) center center no-repeat;}
@@ -202,8 +201,7 @@ body {background: none;}
 .keyboard_ctrl .popup p {font-size: 14px; font-family: 'notokr-medium'; line-height: 19px; color: #1a1a1a;}
 .keyboard_ctrl table {width: 236px; margin-top: 14px; border-top: 1px solid #d5d5d5; border-left: 1px solid #d5d5d5;}
 .keyboard_ctrl table caption {text-indent: -9999px; width: 1px; height: 1px;}
-.keyboard_ctrl table th,
-.keyboard_ctrl table td {border-right: 1px solid #d5d5d5; border-bottom: 1px solid #d5d5d5; line-height: 26px; font-size: 14px;}
+.keyboard_ctrl table th, .keyboard_ctrl table td {border-right: 1px solid #d5d5d5; border-bottom: 1px solid #d5d5d5; line-height: 26px; font-size: 14px;}
 .keyboard_ctrl table th {font-family: 'noto-bold'; color: #1a1a1a;}
 .keyboard_ctrl table td {padding-left: 15px; color: #757575; font-family: 'notokr-demilight';}
 .keyboard_ctrl .popup .close_popup {position: absolute; top: 11px; right: 11px; width: 14px; height: 14px; text-indent: -9999px; background: url(http://img.imbc.com/commons/2018/image/player/keyinfo-close.png) no-repeat;}
@@ -234,12 +232,10 @@ body {background: none;}
 .sc_thumb .sort .select-box li {color: #666666; font-family: 'notokr-demilight'; line-height: 28px;}
 
 /*19*/
-.thumb_list .ico-19:before,
-.vod_list .ico-19:before {content: ''; width: 26px; height: 26px; position: absolute; right: 8px; top: 8px; background: url(../images/ico-badge-19.png) repeat-x; box-sizing: border-box;}
+.thumb_list .ico-19:before, .vod_list .ico-19:before {content: ''; width: 26px; height: 26px; position: absolute; right: 8px; top: 8px; background: url(../images/ico-badge-19.png) repeat-x; box-sizing: border-box;}
 
 /*photo*/
-.wrap_photo,
-.wrap_sketch {padding-top: 0;}
+.wrap_photo, .wrap_sketch {padding-top: 0;}
 .wrap_photo .thumb_list ul {padding-bottom: 10px; border-bottom: 1px solid #e5e5e5;}
 .wrap_photo .thumb_list .wrap_txt .cnt {padding-right: 8px; margin-right: 8px; position: relative; letter-spacing: -.05em; color: #666666;}
 .wrap_photo .thumb_list .wrap_txt .cnt:after {content: ''; width: 1px; height: 11px; background: #d1d1d1; position: absolute; right: 0; top: 6px;}
