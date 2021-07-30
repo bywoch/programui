@@ -236,3 +236,21 @@ body {background: none;}
 /*19*/
 .thumb_list .ico-19:before,
 .vod_list .ico-19:before {content: ''; width: 26px; height: 26px; position: absolute; right: 8px; top: 8px; background: url(../images/ico-badge-19.png) repeat-x; box-sizing: border-box;}
+
+/*photo*/
+.wrap_photo,
+.wrap_sketch {padding-top: 0;}
+.wrap_photo .thumb_list ul {padding-bottom: 10px; border-bottom: 1px solid #e5e5e5;}
+.wrap_photo .thumb_list .wrap_txt .cnt {padding-right: 8px; margin-right: 8px; position: relative; letter-spacing: -.05em; color: #666666;}
+.wrap_photo .thumb_list .wrap_txt .cnt:after {content: ''; width: 1px; height: 11px; background: #d1d1d1; position: absolute; right: 0; top: 6px;}
+
+/*preview*/
+.wrap_preview {padding: 35px 155px 50px; border: 1px solid #e5e5e5; margin-bottom: 20px;}
+.wrap_preview .wrap_player {width: 906px; height: 509px;}
+.wrap_preview .info h4 {padding: 20px 0 30px; line-height: 1.4; font-size: 28px;}
+.wrap_preview .info .vod_info {padding-top: 20px; color: #757575; font-size: 14px;}
+.wrap_preview .info .vod_info span {display: inline-block; margin-right: 8px;}
+.wrap_preview .info .cast {overflow: hidden; margin-bottom: 15px; padding-bottom: 15px; border-bottom: 1px solid #e5e5e5;}
+.wrap_preview .info .cast .tit {display: inline-block; float: left; width: 55px; height: 28px; border: 1px solid #a9b6ee; color: #5c6fc3; font-size: 14px; font-family: 'notokr-bold'; text-align: center; line-height: 26px; border-radius: 3px;}
+.wrap_preview .info .cast .ppl {margin-left: 10px; width: 680px; float: left; font-size: 16px; line-height: 25px;}
+.wrap_preview .detail {color: #757575; font-size: 16px; line-height: 26px;}
