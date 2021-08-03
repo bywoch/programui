@@ -1,116 +1,46 @@
 $(document).ready(function () {
-    //common teaser head
+	//common teaser head
 	headHtml();
-
-	//teaser flt banner
-	$('.flt button').click(function () {
-		$(this).parent().hide();
-	});
-
-	//like btn
-	$('.btn_like').click(function () {
-		$(this).toggleClass('on');
-	})
-
-	//poster flt banner
-	$('.flt_box .close_flt').click(function () {
-		$(this).parent().hide();
-	});
-
 	//common nav ui
 	navHtml();
-	navSns();
-	navDepth();
-
+	//navSns();
+	//navDepth();
 	//main ui
-	if ($('.main').length) {
-		//notice
-		noticeRoll('notices', 'btnCount', true);
-		//poster
-		$('.roll_poster').slick({
-			dots: true,
-			infinite: true,
-			speed: 1500,
-			fade: true,
-			autoplay: true,
-			autoplaySpeed: 4000,
-			arrows: false
-		});
-		//news slide
-		$('.slide_news').slick({
-			infinite: true,
-			slidesToShow: 4,
-			slidesToScroll: 4,
-			arrows: true,
-			speed: 500
-		});
-		//bbs slide
-		$('.slide_bbs').slick({
-			infinite: true,
-			slidesToShow: 5,
-			slidesToScroll: 5,
-			arrows: true,
-			speed: 500
-		});
-	}
-    
+
 });
+
 
 function headHtml() {
 	var headHtml = '';
+
 	headHtml += '<div class="info">'
-		+ '<a href="#"><span class="logo"><img src="http://img.imbc.com/broad/tv/ent/hangoutwithyoo/images//logo.png" alt="에스 에프 에잇 로고"></span></a>'
+		+ '<a href="//program.imbc.com/' + bid + '"><span class="logo"></span></a>'
 		+ '<div class="cont_right">'
-		+ '<h2>에스 에프 에잇</h2>'
+		+ '<h2></h2>'
 		+ '<div class="pro_info">  '
-		+ '<span class="time">매주 수,목 저녁 8시 55분</span>'
-		+ '<button type="button" class="btn_like "><span class="like">1,111</span></button>'
+		+ '<span class="time"></span>'
+		+ '<button type="button" class="btn_like" style="display:none;">'
+		+ '    <span class="like_txt">좋아요 클릭</span>'
+		+ '    <span class="like"></span>'
+		+ '</button >'
 		+ '</div>'
-		+ '</div>   '
-		+ '</div>         '
-		+ '<div class="flt">'
-		+ ' <div class="flt_txt">'
-		+ ' <span>5월 22일</span><br>저녁 8시 55분 첫방송!'
 		+ '</div>'
-		+ '<button type="button" title="닫기">닫기</button>'
+		+ '</div>'
+		+ '<div class="flt" style="display:none;">'
+		+ '<div class="flt_slide"></div>'
+		+ '<div class="flt_dots"></div>'
 		+ '</div>';
 	$('.sc_type1').append(headHtml);
+	MenuUtil.SetMenu();
 }
-
 //common navi
 function navHtml() {
 	var navHtml = '';
-	navHtml += '<ul>'
-		+ '<li><a href="#" class="depth1">다시보기</a></li>'
-		+ '<li><a href="#" class="depth1">시청자의견</a></li>'
-		+ '<li>'
-		+ '    <a href="#" class="depth1">예고보기</a>'
-		+ '    <div class="dropdown">'
-		+ '        <a href="">다시보기</a>'
-		+ '        <a href="">예고보기</a>'
-		+ '        <a href="">화제의 1분</a>'
-		+ '    </div>'
-		+ '</li>'
-		+ '<li><a href="#" class="depth1">기획의도</a></li>'
-		+ '<li>'
-		+ '    <a href="#" class="depth1">제작진소개</a>'
-		+ '</li>'
-		+ '<li><a href="#" class="depth1">등장인물</a></li>'
-		+ '<li><a href="#" class="depth1">연예뉴스</a></li>'
-		+ '<li><a href="#" class="depth1">현장포토</a></li>'
-		+ '<li><a href="#" class="depth1">화제의 1분(무료)</a></li>'
-		+ '<li><a href="#" class="depth1">영상스케치</a></li>'
-		+ '</ul>'
-		+ '<div class="wrap_sns">'
+	navHtml += '<ul></ul>'
+		+ '<div class="wrap_sns" style="display:none;">'
 		+ '    <button type="button" class="btn_sns">SNS 링크</button>'
 		+ '    <div class="list">'
-		+ '        <ul>'
-		+ '            <li class="twt"><a href="#">트위터 바로가기</a></li>'
-		+ '            <li class="fb"><a href="#">페이스북 바로가기</a></li>'
-		+ '            <li class="insta"><a href="#">인스타그램 바로가기</a></li>'
-		+ '            <li class="ytb"><a href="#">유튜브 바로가기</a></li>'
-		+ '            <li class="ch"><a href="#">채널 바로가기</a></li>'
-		+ '        </ul>'
+		+ '        <ul></ul>'
 		+ '    </div>'
 		+ '</div>';
 	$('#proNav').append(navHtml);
@@ -122,14 +52,14 @@ function navDepth() {
 	var navItems = nav.find('.depth1');
 	var dropdown = nav.find('.dropdown');
 	//width 조정
-	dropdown.each(function () {
-		var dropdownW = 0;
-		$(this).find('a').each(function () {
-			dropdownW += Math.floor($(this).context.clientWidth) + 10;
-			$(this).parent().width(dropdownW);
-			$(this).parent().css('margin-right', -$(this).parent().width() / 2);
-		});
-	});
+	//dropdown.each(function () {
+	//    var dropdownW = 0;
+	//    $(this).find('a').each(function () {
+	//        dropdownW += Math.floor($(this).context.clientWidth) + 10;
+	//        $(this).parent().width(dropdownW);
+	//        $(this).parent().css('margin-right', -$(this).parent().width() / 2);
+	//    });
+	//});
 	dropdown.hide(); //숨김
 	navItems.on('mouseover focus', function () {
 		navItems.removeClass('on');
@@ -148,10 +78,153 @@ function navDepth() {
 
 function navSns() {
 	var sns = $('.sc_nav .wrap_sns');
-	sns.on('mouseover focus', function () {
+	sns.on('mouseover keyup', function () {
 		$(this).find('.list').stop().slideDown('fast');
 	});
-	sns.on('mouseleave blur', function () {
+	sns.on('mouseleave focusout', function () {
 		$(this).find('.list').stop().slideUp('fast');
 	});
 }
+
+function noticeRoll(containerID, buttonID, autoStart) {
+	var $element = $('#' + containerID).find('.notice_list');
+	var $prev = $('#' + buttonID).find('.btn-left');
+	var $next = $('#' + buttonID).find('.btn-right');
+	var autoPlay = autoStart;
+	var auto = null;
+	var speed = 3300;
+	var timer = null;
+	var index = 1;
+	var total = $('#' + containerID).find('li').length;
+	var move = $element.children().outerHeight();
+	var first = false;
+	var lastChild;
+
+	lastChild = $element.children().eq(-1).clone(true);
+	lastChild.prependTo($element);
+	$element.children().eq(-1).remove();
+
+	if ($element.children().length == 1) {
+		$element.css('top', '0px');
+	} else {
+		$element.css('top', '-' + move + 'px');
+	}
+	if (autoPlay) {
+		timer = setInterval(moveNextSlide, speed);
+		auto = true;
+	}
+	$element.find('>li').bind({
+		'mouseenter': function () {
+			if (auto) {
+				clearInterval(timer);
+			}
+		},
+		'mouseleave': function () {
+			if (auto) {
+				timer = setInterval(moveNextSlide, speed);
+			}
+		}
+	});
+
+	$prev.bind({
+		'click': function () {
+			movePrevSlide();
+			return false;
+		},
+		'mouseenter': function () {
+			if (auto) {
+				clearInterval(timer);
+			}
+		},
+		'mouseleave': function () {
+			if (auto) {
+				timer = setInterval(moveNextSlide, speed);
+			}
+		}
+	});
+
+	$next.bind({
+		'click': function () {
+			moveNextSlide();
+			return false;
+		},
+		'mouseenter': function () {
+			if (auto) {
+				clearInterval(timer);
+			}
+		},
+		'mouseleave': function () {
+			if (auto) {
+				timer = setInterval(moveNextSlide, speed);
+			}
+		}
+	});
+
+	function movePrevSlide() {
+
+		if (index < 2) {
+			index = total;
+		} else {
+			index--;
+		}
+		$('.num').text(index);
+		$element.each(function (idx) {
+			if (!first) {
+				$element.eq(idx).animate({ 'top': '0px' }, 'normal', function () {
+					lastChild = $(this).children().eq(-1).clone(true);
+					lastChild.prependTo($element.eq(idx));
+					$(this).children().eq(-1).remove();
+					$(this).css('top', '-' + move + 'px');
+				});
+				first = true;
+				return false;
+			}
+
+			$element.eq(idx).animate({ 'top': '0px' }, 'normal', function () {
+				lastChild = $(this).children().filter(':last-child').clone(true);
+				lastChild.prependTo($element.eq(idx));
+				$(this).children().filter(':last-child').remove();
+				$(this).css('top', '-' + move + 'px');
+			});
+		});
+	}
+
+	function moveNextSlide() {
+		if (index > total - 1) {
+			index = 1;
+		} else {
+			index++;
+		}
+		$element.each(function (idx) {
+
+			var firstChild = $element.children().filter(':first-child').clone(true);
+			firstChild.appendTo($element.eq(idx));
+			$element.children().filter(':first-child').remove();
+			$element.css('top', '0px');
+
+			$element.eq(idx).animate({ 'top': '-' + move + 'px' }, 'normal');
+		});
+		$('.num').text(index);
+	}
+	$('.num').text(index);
+	$('.sum').text(total);
+}
+
+$(window).load(function () {
+	//teaser flt banner
+	//$('.flt button').click(function () {
+	//    $(this).parent().hide();
+	//});
+
+
+	//$('.btn_like').click(function () {
+	//    $(this).toggleClass('on');
+	//})
+
+	//poster flt banner
+	//$('.flt_box .close_flt').click(function () {
+	//    $(".flt_vod").remove();
+	//    $(this).parent().hide();
+	//});
+
+});
