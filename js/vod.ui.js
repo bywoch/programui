@@ -33,7 +33,7 @@ $(document).ready(function () {
 		$(this).addClass('active');
 		$(this).siblings().removeClass('active');
 	})
-	
+
 	// DropDown 객체 생성자 함수 정의
 	var select = new DropDown($('.select-box'));
 	function DropDown(el) {
